@@ -28,7 +28,7 @@
   ],
   "yearsOld": "Vor {age} Jahren wurdest du an einem {day} geboren! 🥳",
   "haveBenn": {
-    "months": "There have been: <span>{monthsPassed}</span> Monate,",
+    "months": "Es sind schon: <span>{monthsPassed}</span> Monate,",
     "weeks": "<span>{weeksPassed}</span> Wochen,",
     "days": "<span>{daysPassed}</span> Tage,",
     "hours": "<span>{hoursPassed}</span> Stunden,",

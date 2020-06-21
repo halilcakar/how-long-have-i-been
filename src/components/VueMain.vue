@@ -4,9 +4,7 @@
     class="align-items-center container d-flex flex-column justify-content-center"
     style="height: calc(100vh - 10rem);"
   >
-    <h2 class="pb-3">
-      {{ $t("birth-text") }}
-    </h2>
+    <h2 class="pb-3">{{ $t("birth-text") }}</h2>
 
     <div class="input-group justify-content-center pb-3">
       <div class="input-group-prepend">
@@ -15,13 +13,11 @@
         </select>
       </div>
       <select class="select w-50" v-model.number="month">
-        <option v-for="(m, mIndex) in months" :value="mIndex" :key="mIndex">{{
-          m
-        }}</option>
+        <option v-for="(month, mIndex) in months" :value="mIndex" :key="mIndex">{{ month }}</option>
       </select>
       <div class="input-group-append">
         <select class="input-group-text" v-model.number="year">
-          <option v-for="(y, yIndex) in years" :key="yIndex">{{ y }}</option>
+          <option v-for="(year, yIndex) in years" :key="yIndex">{{ year }}</option>
         </select>
       </div>
     </div>
@@ -29,13 +25,13 @@
     <div class="input-group justify-content-center align-items-center pb-3">
       <div class="input-group-prepend">
         <select class="input-group-text" v-model.number="hour">
-          <option v-for="(h, hIndex) in hours" :key="hIndex">{{ h }}</option>
+          <option v-for="(hours, hIndex) in hours" :key="hIndex">{{ hours }}</option>
         </select>
       </div>
-      <span class="px-2">:</span>
+      <span class="px-1">:</span>
       <div class="input-group-append">
         <select class="input-group-text" v-model.number="minute">
-          <option v-for="(m, mIndex) in minutes" :key="mIndex">{{ m }}</option>
+          <option v-for="(minutes, mIndex) in minutes" :key="mIndex">{{ minutes }}</option>
         </select>
       </div>
     </div>
@@ -76,6 +72,7 @@ export default {
       minute: 0,
       minutes: [],
       now: Date.now(),
+      birthdate: null
     };
   },
   created() {
@@ -111,13 +108,14 @@ export default {
       this.hour,
       this.minute
     );
+
     this.now = Date.now();
     setInterval(() => (this.now = Date.now()), 1000);
   },
   methods: {
     format(value, indicator = ".") {
       return value.toString().replace(/(.)(?=(?:\d{3})+$)/g, "$1" + indicator);
-    },
+    }
   },
   computed: {
     months() {
@@ -128,7 +126,7 @@ export default {
     },
 
     getDay() {
-      return this.weekDays[this.birthdate.getDay() - 1];
+      return this.weekDays[this.birthdate.getDate() % 7];
     },
     age() {
       return new Date().getFullYear() - this.year - 1;
@@ -153,7 +151,7 @@ export default {
       return Math.round(diff / (24 * 60 * 60 * 1000));
     },
     monthsPassed() {
-      return this.format(Math.floor(this.diff / (1000 * 60 * 60 * 24 * 30)));
+      return this.format(this.age * 12 + (new Date().getMonth() + 1));
     },
     weeksPassed() {
       return this.format(Math.floor(this.diff / (1000 * 60 * 60 * 24 * 7)));
@@ -169,8 +167,55 @@ export default {
     },
     secondsPassed() {
       return this.format(Math.floor(this.diff / 1000));
-    },
+    }
   },
+  watch: {
+    year: function() {
+      this.birthdate = new Date(
+        this.year,
+        this.month,
+        this.day,
+        this.hour,
+        this.minute
+      );
+    },
+    month: function() {
+      this.birthdate = new Date(
+        this.year,
+        this.month,
+        this.day,
+        this.hour,
+        this.minute
+      );
+    },
+    day: function() {
+      this.birthdate = new Date(
+        this.year,
+        this.month,
+        this.day,
+        this.hour,
+        this.minute
+      );
+    },
+    hour: function() {
+      this.birthdate = new Date(
+        this.year,
+        this.month,
+        this.day,
+        this.hour,
+        this.minute
+      );
+    },
+    minute: function() {
+      this.birthdate = new Date(
+        this.year,
+        this.month,
+        this.day,
+        this.hour,
+        this.minute
+      );
+    }
+  }
 };
 </script>
 
