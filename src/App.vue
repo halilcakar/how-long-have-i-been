@@ -1,19 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="logo">
+      <img
+        width="120rem"
+        height="120rem"
+        alt="Vue logo"
+        src="./assets/logo.png"
+      />
+      <locale></locale>
+    </div>
+    <calculator />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Calculator from "./components/Calculator";
+import Locale from "./components/Locale";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Calculator,
+    Locale,
+  },
+};
 </script>
 
 <style>
@@ -24,5 +34,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#logo {
+  display: flex;
+  justify-content: center;
 }
 </style>

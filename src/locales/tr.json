@@ -1,0 +1,37 @@
+{
+  "title": "Vue.js Projesine Hoşgeldin!",
+  "birth-text": "Doğum Günün..",
+  "weekDays": [
+    "Pazartesi",
+    "Salı",
+    "Çarşamba",
+    "Perşembe",
+    "Cuma",
+    "Cumartesi",
+    "Pazar"
+  ],
+  "months": [
+    "Ocak",
+    "Şubat",
+    "Mart",
+    "Nisan",
+    "Mayıs",
+    "Haziran",
+    "Temmuz",
+    "Agustos",
+    "Eylül",
+    "Ekim",
+    "Kasım",
+    "Aralık"
+  ],
+  "yearsOld": "{age} yıl önce bir {day} günü doğmuşsun! 🥳",
+  "haveBenn": {
+    "months": "Sen Doğalı: <span>{monthsPassed}</span> Ay",
+    "weeks": "<span>{weeksPassed}</span> Hafta,",
+    "days": "<span>{daysPassed}</span> Gün,",
+    "hours": "<span>{hoursPassed}</span> Saat,",
+    "minutes": "<span>{minutesPassed}</span> Dakika,",
+    "seconds": "<span>{secondsPassed}</span> Saniye,",
+    "passed": "geçti!"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "title": "How long have i been..",
+  "birth-text": "Your birthday..",
+  "weekDays": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "July",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "yearsOld": "{age} years age a {day} you born! 🥳",
+  "haveBenn": {
+    "months": "There have been: <span>{monthsPassed}</span> Months,",
+    "weeks": "<span>{weeksPassed}</span> Weeks,",
+    "days": "<span>{daysPassed}</span> Days,",
+    "hours": "<span>{hoursPassed}</span> Hours,",
+    "minutes": "<span>{minutesPassed}</span> Minutes,",
+    "seconds": "<span>{secondsPassed}</span> Seconds,",
+    "passed": "passed!"
+  }
+}
