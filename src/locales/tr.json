@@ -1,6 +1,7 @@
 {
-  "title": "Vue.js Projesine Hoşgeldin!",
+  "title": "Ne kadar zamandır..",
   "birth-text": "Doğum Günün..",
+  "lang": "Dil",
   "weekDays": [
     "Pazartesi",
     "Salı",
@@ -26,12 +27,12 @@
   ],
   "yearsOld": "{age} yıl önce bir {day} günü doğmuşsun! 🥳",
   "haveBenn": {
-    "months": "Sen Doğalı: <span>{monthsPassed}</span> Ay",
+    "months": "Sen Doğalı: <span>{monthsPassed}</span> Ay,",
     "weeks": "<span>{weeksPassed}</span> Hafta,",
     "days": "<span>{daysPassed}</span> Gün,",
     "hours": "<span>{hoursPassed}</span> Saat,",
     "minutes": "<span>{minutesPassed}</span> Dakika,",
-    "seconds": "<span>{secondsPassed}</span> Saniye,",
-    "passed": "geçti!"
-  }
+    "seconds": "<span>{secondsPassed}</span> Saniye geçti!"
+  },
+  "next": "Sonraki Doğum günü.. {nextBirthday} gün"
 }

@@ -1,6 +1,7 @@
 {
   "title": "How long have i been..",
   "birth-text": "Your birthday..",
+  "lang": "Language",
   "weekDays": [
     "Monday",
     "Tuesday",
@@ -24,14 +25,14 @@
     "November",
     "December"
   ],
-  "yearsOld": "{age} years age a {day} you born! 🥳",
+  "yearsOld": "{age} years ago, you are born on a {day}! 🥳",
   "haveBenn": {
     "months": "There have been: <span>{monthsPassed}</span> Months,",
     "weeks": "<span>{weeksPassed}</span> Weeks,",
     "days": "<span>{daysPassed}</span> Days,",
     "hours": "<span>{hoursPassed}</span> Hours,",
     "minutes": "<span>{minutesPassed}</span> Minutes,",
-    "seconds": "<span>{secondsPassed}</span> Seconds,",
-    "passed": "passed!"
-  }
+    "seconds": "<span>{secondsPassed}</span> Seconds passed!"
+  },
+  "next": "Next Birthday in.. {nextBirthday} days"
 }

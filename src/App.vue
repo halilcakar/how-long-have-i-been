@@ -1,27 +1,36 @@
 <template>
   <div id="app">
-    <div id="logo">
-      <img
-        width="120rem"
-        height="120rem"
-        alt="Vue logo"
-        src="./assets/logo.png"
-      />
-      <locale></locale>
-    </div>
-    <calculator />
+    <vue-header />
+
+    <vue-main />
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"
+          >Made with ❤, by
+          <a href="https://github.com/halilcakar/how-long-have-i-been"
+            >@halilcakar</a
+          >
+          Special thanks to
+          <a href="https://www.linkedin.com/in/sabrina-reith-799048156/"
+            >@sabrina</a
+          >
+          For Translation
+        </span>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
-import Calculator from "./components/Calculator";
-import Locale from "./components/Locale";
+import VueHeader from "./components/VueHeader";
+import VueMain from "./components/VueMain";
 
 export default {
   name: "App",
   components: {
-    Calculator,
-    Locale,
+    VueHeader,
+    VueMain,
   },
 };
 </script>
@@ -32,11 +41,25 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
-#logo {
-  display: flex;
-  justify-content: center;
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem; /* Set the fixed height of the footer here */
+  line-height: 5rem; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
 }
 </style>

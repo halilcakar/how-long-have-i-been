@@ -1,0 +1,39 @@
+{
+  "title": "Wie lange war ich...",
+  "birth-text": "Dein Geburtstag...",
+  "lang": "Sprache",
+  "weekDays": [
+    "Wochentage",
+    "Montag ",
+    "Dienstag ",
+    "Mittwoch ",
+    "Donnerstag ",
+    "Freitag ",
+    "Samstag ",
+    "Sonntag"
+  ],
+  "months": [
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juli",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember"
+  ],
+  "yearsOld": "Vor {age} Jahren wurdest du an einem {day} geboren! 🥳",
+  "haveBenn": {
+    "months": "There have been: <span>{monthsPassed}</span> Monate,",
+    "weeks": "<span>{weeksPassed}</span> Wochen,",
+    "days": "<span>{daysPassed}</span> Tage,",
+    "hours": "<span>{hoursPassed}</span> Stunden,",
+    "minutes": "<span>{minutesPassed}</span> Minuten,",
+    "seconds": "<span>{secondsPassed}</span> Sekunden verstrichen!"
+  },
+  "next": "Dein nächster Geburtstag ist in.. {nextBirthday} Tagen"
+}
