@@ -3,13 +3,13 @@
   "birth-text": "Doğum Günün..",
   "lang": "Dil",
   "weekDays": [
+    "Pazar",
     "Pazartesi",
     "Salı",
     "Çarşamba",
     "Perşembe",
     "Cuma",
-    "Cumartesi",
-    "Pazar"
+    "Cumartesi"
   ],
   "months": [
     "Ocak",
@@ -19,20 +19,20 @@
     "Mayıs",
     "Haziran",
     "Temmuz",
-    "Agustos",
+    "Ağustos",
     "Eylül",
     "Ekim",
     "Kasım",
     "Aralık"
   ],
-  "yearsOld": "{age} yıl önce bir {day} günü doğmuşsun! 🥳",
+  "yearsOld": "<span>{age}</span> yıl önce bir <span>{day}</span> günü doğmuşsun! 🥳",
   "haveBenn": {
-    "months": "Sen Doğalı: <span>{monthsPassed}</span> Ay,",
-    "weeks": "<span>{weeksPassed}</span> Hafta,",
-    "days": "<span>{daysPassed}</span> Gün,",
-    "hours": "<span>{hoursPassed}</span> Saat,",
-    "minutes": "<span>{minutesPassed}</span> Dakika,",
-    "seconds": "<span>{secondsPassed}</span> Saniye geçti!"
+    "months": "<span>{monthsPassed}</span> Ay;",
+    "weeks": "<span>{weeksPassed}</span> Hafta;",
+    "days": "<span>{daysPassed}</span> Gün;",
+    "hours": "<span>{hoursPassed}</span> Saat;",
+    "minutes": "<span>{minutesPassed}</span> Dakika;",
+    "seconds": "<span>{secondsPassed}</span> Saniye;"
   },
-  "next": "Sonraki Doğum günü.. {nextBirthday} gün"
+  "next": "Sonraki Doğum günü.. <span>{nextBirthday}</span> gün"
 }

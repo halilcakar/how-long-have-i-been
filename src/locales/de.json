@@ -3,14 +3,14 @@
   "birth-text": "Dein Geburtstag...",
   "lang": "Sprache",
   "weekDays": [
+    "Sonntag",
     "Wochentage",
     "Montag ",
     "Dienstag ",
     "Mittwoch ",
     "Donnerstag ",
     "Freitag ",
-    "Samstag ",
-    "Sonntag"
+    "Samstag "
   ],
   "months": [
     "Januar",
@@ -26,14 +26,14 @@
     "November",
     "Dezember"
   ],
-  "yearsOld": "Vor {age} Jahren wurdest du an einem {day} geboren! 🥳",
+  "yearsOld": "Vor <span>{age}</span> Jahren wurdest du an einem <span>{day}</span> geboren! 🥳",
   "haveBenn": {
-    "months": "Es sind schon: <span>{monthsPassed}</span> Monate,",
-    "weeks": "<span>{weeksPassed}</span> Wochen,",
-    "days": "<span>{daysPassed}</span> Tage,",
-    "hours": "<span>{hoursPassed}</span> Stunden,",
-    "minutes": "<span>{minutesPassed}</span> Minuten,",
-    "seconds": "<span>{secondsPassed}</span> Sekunden verstrichen!"
+    "months": "<span>{monthsPassed}</span> Monate;",
+    "weeks": "<span>{weeksPassed}</span> Wochen;",
+    "days": "<span>{daysPassed}</span> Tage;",
+    "hours": "<span>{hoursPassed}</span> Stunden;",
+    "minutes": "<span>{minutesPassed}</span> Minuten;",
+    "seconds": "<span>{secondsPassed}</span> Sekunden;"
   },
-  "next": "Dein nächster Geburtstag ist in.. {nextBirthday} Tagen"
+  "next": "Dein nächster Geburtstag ist in.. <span>{nextBirthday}</span> Tagen"
 }

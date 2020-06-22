@@ -3,13 +3,13 @@
   "birth-text": "Your birthday..",
   "lang": "Language",
   "weekDays": [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
-    "Sunday"
+    "Saturday"
   ],
   "months": [
     "January",
@@ -17,7 +17,7 @@
     "March",
     "April",
     "May",
-    "July",
+    "June",
     "July",
     "August",
     "September",
@@ -25,14 +25,14 @@
     "November",
     "December"
   ],
-  "yearsOld": "{age} years ago, you are born on a {day}! 🥳",
+  "yearsOld": "<span>{age}</span> years ago, you are born on a <span>{day}</span>! 🥳",
   "haveBenn": {
-    "months": "There have been: <span>{monthsPassed}</span> Months,",
-    "weeks": "<span>{weeksPassed}</span> Weeks,",
-    "days": "<span>{daysPassed}</span> Days,",
-    "hours": "<span>{hoursPassed}</span> Hours,",
-    "minutes": "<span>{minutesPassed}</span> Minutes,",
-    "seconds": "<span>{secondsPassed}</span> Seconds passed!"
+    "months": "<span>{monthsPassed}</span> Months;",
+    "weeks": "<span>{weeksPassed}</span> Weeks;",
+    "days": "<span>{daysPassed}</span> Days;",
+    "hours": "<span>{hoursPassed}</span> Hours;",
+    "minutes": "<span>{minutesPassed}</span> Minutes;",
+    "seconds": "<span>{secondsPassed}</span> Seconds;"
   },
-  "next": "Next Birthday in.. {nextBirthday} days"
+  "next": "Next Birthday in.. <span>{nextBirthday}</span> days"
 }
